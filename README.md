@@ -1,19 +1,25 @@
 # LLM Battleground: Adversarial Dialogue Simulator
 
-A functional framework designed to eliminate passive AI behavior through forced contrarianism. The script orchestrates a high-stakes, zero-concession debate between Llama 3 and Gemini 2.0, archiving every round and the final judicial verdict into a local text log for a permanent record of the conflict.
+The LLM Battleground is a functional framework designed to eliminate "Passive Opponent Syndrome" in AI interactions. By pitting Llama 3 (via Groq) against Gemini 2.0 (via Google GenAI), the script forces a high-stakes, zero-concession debate where agreement is programmatically prohibited.
 
-## Core Features
-* **Forced Contrarianism:** Prevents agreement bugs by injecting adversarial prompts into the opponent agent.
-* **Automated Logging:** Saves timestamped transcripts of every debate to `.txt` files.
-* **Dual-Provider Architecture:** Leverages Groq (Llama) and Google (Gemini) for diverse rhetorical styles.
-* **Dynamic Temperature:** Increases randomness over turns to break repetitive loops.
+## Why This Exists
+Most LLMs are fine-tuned for helpfulness, which often leads to "sycophancy"—the tendency to agree with the user or an opponent to avoid conflict. This script breaks that cycle using **Forced Contrarianism**. It creates a "Digital Viva" where every logic gap is exploited, and every bias is exposed. For researchers and power users, this is a stress-test for model reasoning under pressure.
+
+## How It Works
+The system uses a dual-provider architecture to ensure diverse rhetorical styles. While Llama maintains the primary argument, Gemini is injected with an adversarial prompt that overrides its default polite persona. 
+
+### Key Technical Features:
+* **Adversarial Injection:** Gemini is hard-coded to identify flaws and provide conflicting theories regardless of the topic.
+* **Context Truncation:** The script manages memory by passing the System prompt and only the last four turns, keeping the focus sharp and preventing "context drift".
+* **Dynamic Temperature Scaling:** To prevent repetitive "loops," the temperature (randomness) increases with each round.
+* **Automated Logging:** Every exchange is captured in a timestamped `.txt` file, providing a permanent record of the intellectual conflict.
 
 ## Requirements
 * `pip install google-genai groq`
-* Valid API keys for both Google GenAI and Groq.
+* API Keys for Groq and Google GenAI.
 
-## Usage
-1. Configure your API keys in the `CONFIGURATION` section.
-2. Run the script: `python LLM_Battleground4.py`
-3. Enter a debate topic when prompted.
-4. Review the generated `.txt` log for the full transcript and winner summary.
+## Quick Start
+1. Add your keys to the `CONFIGURATION` section of the script.
+2. Run: `python LLM_Battleground4.py`
+3. Enter a controversial topic and watch the models fight for dominance.
+4. Check the local directory for the `debate_log_...` file to review the final verdict.
