@@ -2,7 +2,7 @@
 ================================================================================
 PROJECT:        THE LLM BATTLEGROUND - ADVERSARIAL DIALOGUE SIMULATOR
 VERSION:        4.1.0 (2026 LOGGING ENABLED)
-AUTHOR:         KRIS SEUNARINE (MODIFIED BY GEMINI)
+AUTHOR:         KRIS SEUNARINE
 DATE:           FEBRUARY 20, 2026
 LOCATION:       SKETTY, WALES, UK
 --------------------------------------------------------------------------------
@@ -143,4 +143,5 @@ def battle_of_the_ai(initial_question, max_turns=6):
 
 if __name__ == "__main__":
     user_input = input("Enter debate topic: ")
+
     battle_of_the_ai(user_input)
