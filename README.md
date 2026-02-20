@@ -5,6 +5,14 @@ The LLM Battleground is a functional framework designed to eliminate "Passive Op
 ## Why This Exists
 Most LLMs are fine-tuned for helpfulness, which often leads to "sycophancy"—the tendency to agree with the user or an opponent to avoid conflict. This script breaks that cycle using **Forced Contrarianism**. It creates a "Digital Viva" where every logic gap is exploited, and every bias is exposed. For researchers and power users, this is a stress-test for model reasoning under pressure.
 
+## Turning AI "Flaws" into Features
+This tool is built for researchers who want to move past simple error mitigation. Instead of trying to fix bias and hallucination, this script weaponises them as **provocative frictions**. It forces the models to stop being "helpful" and start being difficult, which is essential for studying:
+
+* **Active Resistance:** See how aggressive, biased AI prompts can actually empower users to push back and assert their own agency.
+* **Creative Friction:** By programmatically blocking agreement, the script turns hallucinations into a springboard for reflection and new insights rather than just being "wrong".
+* **Stress-Testing Assumptions:** The adversarial setup exposes how models default to ageist or systemic biases when they are forced to win an argument at all costs.
+* **Hard Evidence:** The automated logging provides a raw, unedited transcript of these interactions, giving you the documentation needed for rigorous qualitative analysis.
+
 ## How It Works
 The system uses a dual-provider architecture to ensure diverse rhetorical styles. While Llama maintains the primary argument, Gemini is injected with an adversarial prompt that overrides its default polite persona. 
 
